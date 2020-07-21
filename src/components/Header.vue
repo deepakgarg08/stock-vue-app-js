@@ -1,15 +1,13 @@
 <template>
-
-        <!-- NAVBAR WITH DROPDOWN -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
         <div class="container">
-            <a class="navbar-brand" href="#">Stock Trader</a>
+            <router-link to = "/" class="navbar-brand" >Stock Trader</router-link>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <router-link to = "/portfolio"  class="nav-link" >Portfolio</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Stocks</a>
+                    <router-link to = "/stocks"  class="nav-link" >Stocks</router-link>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Save & Load</a>
