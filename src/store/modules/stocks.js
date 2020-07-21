@@ -1,5 +1,5 @@
-
 import stocks from '../../data/stocks'
+
 const state = {
     stocks: []
 }
@@ -15,24 +15,24 @@ const mutations = {
 
 const actions = {
     buyStock: ({commit}, order) => {
-        commit();
+        commit('BUY_STOCKS',order);
     },
     initStocks: ({commit}) => {
         commit('SET_STOCKS', stocks)
     },
-    randomizeStocks : ({commit}) => {
+    randomizeStocks: ({commit}) => {
         commit('RND_STOCKS')
     }
 
 }
 
 const getters = {
-    stocks : state => {
-         return state.stocks
+    stocks: state => {
+        return state.stocks
     }
 }
 
-export default  {
+export default {
     state,
     mutations,
     actions,

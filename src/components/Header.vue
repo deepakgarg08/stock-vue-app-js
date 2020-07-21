@@ -16,7 +16,20 @@
                         <a href="#" class="dropdown-item">Load Data</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <strong class="nav-link" >Funds : {{funds}}</strong>
+                </li>
             </ul>
         </div>
     </nav>
 </template>
+
+<script>
+    export default {
+        computed:{
+            funds(){
+                return this.$store.getters.funds
+            }
+        }
+    }
+</script>
